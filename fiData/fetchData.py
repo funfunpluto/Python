@@ -17,8 +17,9 @@ tickers = ['AAPL', 'MSFT', '^GSPC']
 #get single stock data
 gl = web.DataReader('goog', 'yahoo', start, end)
 
-#get a group of stocks 
+#get a group of stocks from website to dataframe 
 ff = web.DataReader(tickers, 'yahoo', start, end)
+
 
 #print(gl.head())
 
